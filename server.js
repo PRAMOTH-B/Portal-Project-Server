@@ -20,5 +20,13 @@ app.use('/inquiries', require('./routes/inquiries'));
 app.use('/deliveries', require('./routes/deliveries'));
 app.use('/payments', require('./routes/payments'));
 app.use('/customer-memos', require('./routes/memos'));
+app.use('/invoices', require('./routes/invoices'));
+app.use('/vendor', require('./vendor routes/vendor'));
+app.use('/vendor-rfq', require('./vendor routes/rfq'));
+app.use('/vendor-po', require('./vendor routes/po'));
+app.use('/vendor-gr', require('./vendor routes/gr'));
+app.use('/vendor-profile', require('./vendor routes/profile'));
+app.use('/vendor-pdf', require('./vendor routes/vendorpdf'));
+app.use('/vendor-invoices', require('./vendor routes/vendorinvoices'));
 
 app.listen(3000, () => console.log('Server running on http://localhost:3000'));
