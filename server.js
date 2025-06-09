@@ -28,5 +28,7 @@ app.use('/vendor-gr', require('./vendor routes/gr'));
 app.use('/vendor-profile', require('./vendor routes/profile'));
 app.use('/vendor-pdf', require('./vendor routes/vendorpdf'));
 app.use('/vendor-invoices', require('./vendor routes/vendorinvoices'));
+app.use('/vendor-cd', require('./vendor routes/vendorcd'));
+app.use('/vendor-pa', require('./vendor routes/vendorpa'));
 
 app.listen(3000, () => console.log('Server running on http://localhost:3000'));
