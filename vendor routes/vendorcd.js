@@ -16,7 +16,7 @@ router.post('/', async (req, res) => {
 
   try {
     const response = await axios.get(
-      `http://azktlds5cp.kcloud.com:8000/sap/opu/odata/sap/ZPB_VENDOR_PORTAL_CD_SRV/VendorCreditDebitSet?$filter=Lifnr eq '${vendorNumber}'`,
+      `http://azktlds5cp.kcloud.com:8000/sap/opu/odata/sap/ZPB_VENDOR_PORTAL_CD_SRV/VendorCDUpdatedSet?$filter=Lifnr eq '${vendorNumber}'`,
       {
         headers: {
           'Authorization': `Basic ${auth}`,

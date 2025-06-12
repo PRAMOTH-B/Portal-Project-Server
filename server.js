@@ -30,5 +30,7 @@ app.use('/vendor-pdf', require('./vendor routes/vendorpdf'));
 app.use('/vendor-invoices', require('./vendor routes/vendorinvoices'));
 app.use('/vendor-cd', require('./vendor routes/vendorcd'));
 app.use('/vendor-pa', require('./vendor routes/vendorpa'));
+app.use('/employee-auth', require('./Employee routes/employeeAuth'));
+app.use('/employee-profile', require('./Employee routes/employeeProfile'));
 
 app.listen(3000, () => console.log('Server running on http://localhost:3000'));
