@@ -6,7 +6,7 @@ const app = express();
 app.use(bodyParser.json());
 
 app.use(cors({
-  origin: ['http://localhost:4200', 'http://localhost:54809'],
+  origin: ['http://localhost:4200', 'http://localhost:8080'],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Accept', 'Authorization', 'X-Requested-With']
@@ -36,5 +36,7 @@ app.use('/employee-profile', require('./Employee routes/employeeProfile'));
 app.use('/employee-leave', require('./Employee routes/employeeLeave'));
 app.use('/employee-pay', require('./Employee routes/employeePay'));
 app.use('/maint-login', require('./Maintenance Routes/maintLogin'));
+app.use('/maint-notifications', require('./Maintenance Routes/maintNotifications'));
+app.use('/maint-wo', require('./Maintenance Routes/maintWO'));
 
 app.listen(3000, () => console.log('Server running on http://localhost:3000'));
